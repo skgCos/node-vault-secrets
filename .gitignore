@@ -1,0 +1,6 @@
+test.env
+node_modules/**
+*-ti.*
+dist/test/*
+dist/src/
+testapp

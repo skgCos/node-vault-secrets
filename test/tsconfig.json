@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "target": "ES6",
+        "outDir": "../dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "NodeNext",
+        "sourceMap": true,
+        "types": [
+            "node",
+            "mocha"
+        ]
+    },
+    "include": [
+        "./**/*",
+    ]
+}

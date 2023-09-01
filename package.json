@@ -1,6 +1,6 @@
 {
   "name": "node-vault-secrets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unofficial HCP Vault Secrets driver for node.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "npx ts-interface-builder src/vaultSecretsAPI.ts && cd test && tsc && npx mocha --full-trace ../dist/test/**.js",
-    "build": "rm -r dist && cd src && tsc"
+    "build": "rm -r dist && cd src && tsc && cd .. && rm dist/*-ti*"
   },
   "type": "module",
   "author": "skgCos",
@@ -25,10 +25,10 @@
     "ts-interface-checker": "^1.0.2",
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.1",
+    "mocha": "^10.2.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "mocha": "^10.2.0",
     "node-fetch": "^3.3.2"
   }
 }
